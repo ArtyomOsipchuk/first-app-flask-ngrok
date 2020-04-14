@@ -7,12 +7,13 @@ run_with_ngrok(app)
 
 @app.route("/")
 def index():
-    return "Привет от Артёма"
+    return "Привет от Осипчука Артёма"
+
 
 @app.route("/test")
-def index():
-    return "Всё работает"
+def F():
+    return "testing >:3"
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='', port=80)
